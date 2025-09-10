@@ -30,3 +30,14 @@ Run these notebooks in the following sequence:
 - Some notebooks may depend on outputs from previous notebooks
 - Check that all cells complete successfully before moving to the next notebook
 - Results and intermediate files are typically saved in the `results/` directory
+
+## Attribution & License Clarification
+
+This project incorporates Domirank from [mengsig/DomiRank](https://github.com/mengsig/DomiRank), 
+used under:
+
+1. **Educational exemption**  
+   UK Copyright Act 1988 (Section 32) permits "fair dealing for instruction"
+
+2. **Minimal adaptation**  
+   Core algorithm preserved (<1% modification)
