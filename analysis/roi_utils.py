@@ -216,16 +216,14 @@ def auto_detect_groups(names):
         else:
             groups[i] = 'Other'
 
-    # 检查是否有单节点社区
     from collections import Counter
     group_counts = Counter(groups.values())
     print("Group sizes:", group_counts)
 
-    # 如果有单节点社区，合并到其他组
     if min(group_counts.values()) == 1:
         for node, group in groups.items():
             if group_counts[group] == 1:
-                groups[node] = 'Other'  # 合并到默认组
+                groups[node] = 'Other'
 
     return groups
 
